@@ -29,7 +29,7 @@ function stop() {
  clearInterval(interval)
  sec=0
  min=0
- document.getElementById("relogio").innerHTML = '00:00'
+ document.getElementById("relogio").innerHTML = '00:00:00'
 }
 
 
@@ -42,5 +42,5 @@ function cronometro (){
         min==0
         horas++
     }
-    document.getElementById("relogio").innerText=twoDigits(horas)+':'+twoDigits(min)+ ':'+sec+twoDigits(sec)
+    document.getElementById("relogio").innerText=horas+':'+min+':'+sec+
 }
